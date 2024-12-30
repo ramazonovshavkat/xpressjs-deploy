@@ -7,13 +7,13 @@ app.get("/", (req, res) => {
     res.send("Serverdan Salom");
 });
 
-app.get("/about",(req, res) => {
+app.get("/about", (req, res) => {
     res.json({
         name:"Shavkat",
         surname:"Ramazonov",
-        age:34,
+        age: 34,
     });
 });
 
-export const handler = Serverless(app)
+export const handler = Serverless(app);
  
